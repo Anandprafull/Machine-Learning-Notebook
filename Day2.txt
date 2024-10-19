@@ -1,0 +1,142 @@
+
+Variables in Python
+A variable is a name that refers to a memory location where a value is stored. Python variables are dynamically typed, meaning you don't need to declare a variable's type explicitly. The type is inferred based on the value assigned to it.
+
+Variable Declaration
+x = 10     # x is an integer
+y = 3.14   # y is a float
+name = "John"  # name is a string
+Variable Naming Rules
+Must start with a letter or underscore (_)
+Cannot start with a number
+Can contain letters, numbers, and underscores
+Python keywords (e.g., if, else, class) cannot be used as variable names
+Data Types in Python
+Python has several built-in data types. Here are the common ones:
+
+1. Numeric Types
+int: Integer values (e.g., 10, -5)
+float: Floating-point numbers (e.g., 3.14, -0.001)
+complex: Complex numbers (e.g., 3+4j)
+2. Sequence Types
+list: Ordered, mutable collection (e.g., [1, 2, 3])
+tuple: Ordered, immutable collection (e.g., (1, 2, 3))
+range: Sequence of numbers (e.g., range(0, 10))
+3. Text Type
+str: String of text (e.g., "Hello, world!")
+4. Mapping Type
+dict: Key-value pairs (e.g., {"name": "Alice", "age": 25})
+5. Set Types
+set: Unordered collection of unique elements (e.g., {1, 2, 3})
+frozenset: Immutable version of a set (e.g., frozenset([1, 2, 3]))
+6. Boolean Type
+bool: Represents True or False
+7. None Type
+None: Represents the absence of a value
+Operators in Python
+Operators are used to perform operations on variables and values.
+
+1. Arithmetic Operators
+These are used for basic mathematical operations:
+
++: Addition
+-: Subtraction
+*: Multiplication
+/: Division
+%: Modulus (remainder)
+//: Floor division (returns the integer part of the quotient)
+**: Exponentiation
+a = 10
+b = 3
+
+print(a + b)   # Output: 13
+print(a - b)   # Output: 7
+print(a * b)   # Output: 30
+print(a / b)   # Output: 3.333...
+print(a % b)   # Output: 1
+print(a // b)  # Output: 3
+print(a ** b)  # Output: 1000
+2. Comparison Operators
+These are used to compare two values and return a boolean result (True or False):
+
+==: Equal to
+!=: Not equal to
+>: Greater than
+<: Less than
+>=: Greater than or equal to
+<=: Less than or equal to
+x = 5
+y = 10
+
+print(x == y)  # Output: False
+print(x != y)  # Output: True
+print(x > y)   # Output: False
+print(x < y)   # Output: True
+print(x >= y)  # Output: False
+print(x <= y)  # Output: True
+3. Logical Operators
+These are used to combine conditional statements:
+
+and: Returns True if both conditions are true
+or: Returns True if at least one condition is true
+not: Reverses the boolean result
+a = True
+b = False
+
+print(a and b)  # Output: False
+print(a or b)   # Output: True
+print(not a)    # Output: False
+4. Assignment Operators
+These are used to assign values to variables:
+
+=: Simple assignment (e.g., x = 5)
++=: Add and assign (e.g., x += 3 is the same as x = x + 3)
+-=: Subtract and assign (e.g., x -= 2)
+*=: Multiply and assign (e.g., x *= 4)
+/=: Divide and assign (e.g., x /= 5)
+//=: Floor divide and assign
+**=: Exponentiate and assign
+%=: Modulus and assign
+x = 5
+x += 3  # Equivalent to x = x + 3
+print(x)  # Output: 8
+5. Bitwise Operators
+These are used to perform bit-level operations:
+
+&: AND
+|: OR
+^: XOR
+~: NOT
+<<: Left shift
+>>: Right shift
+a = 5   # 101 in binary
+b = 3   # 011 in binary
+
+print(a & b)  # Output: 1 (001 in binary)
+print(a | b)  # Output: 7 (111 in binary)
+print(a ^ b)  # Output: 6 (110 in binary)
+print(~a)     # Output: -6 (Inverts all bits)
+print(a << 1) # Output: 10 (1010 in binary)
+print(a >> 1) # Output: 2 (10 in binary)
+Type Conversion
+Python allows you to convert data from one type to another:
+
+Implicit Conversion: Python automatically converts one type to another (e.g., int to float during division).
+Explicit Conversion: You can explicitly convert types using functions like int(), float(), str(), list(), etc.
+x = 5
+y = 2.5
+z = "10"
+
+# Implicit conversion
+result = x + y   # x is converted to float
+print(result)    # Output: 7.5
+
+# Explicit conversion
+num = int(z)     # Converts string to integer
+print(num)       # Output: 10
+Summary
+Variables store values, and their types are inferred from the assigned value.
+Data types in Python include numeric (int, float), sequence (list, tuple), text (str), mapping (dict), set, and boolean types.
+Operators are used to perform operations like arithmetic, comparison, logical combinations, and bit-level manipulation.
+Type conversion allows you to change the data type of variables either implicitly or explicitly.
+Colab paid products - Cancel contracts here
